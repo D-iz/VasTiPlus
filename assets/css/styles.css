@@ -853,17 +853,15 @@ textarea:focus {
     border-radius: var(--border-radius);
 }
 
-.footer {
-    .contact__content {
-        flex-direction: column;
-    }
+.footer .contact__content {
+    flex-direction: column;
+}
 
-    .contact__content iframe {
-        height: 400px !important;
-    }
+.footer .contact__content iframe {
+    height: 400px !important;
+}
 
-    .footer__content {
-        flex-direction: column;
-        gap: 2rem;
-    }
+.footer .footer__content {
+    flex-direction: column;
+    gap: 2rem;
 } 

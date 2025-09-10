@@ -110,22 +110,3 @@ if (!document.querySelector('#animation-styles')) {
     `;
     document.head.appendChild(animationStyles);
 }
-
-// Загрузка Google Fonts асинхронно для лучшей производительности
-const fontLink = document.createElement('link');
-fontLink.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap';
-fontLink.rel = 'stylesheet';
-fontLink.media = 'print';
-fontLink.onload = function() {
-    this.media = 'all';
-};
-document.head.appendChild(fontLink);
-
-// Предзагрузка критических ресурсов
-const preloadLink = document.createElement('link');
-preloadLink.rel = 'preload';
-preloadLink.href = 'https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2';
-preloadLink.as = 'font';
-preloadLink.type = 'font/woff2';
-preloadLink.crossOrigin = 'anonymous';
-document.head.appendChild(preloadLink); 

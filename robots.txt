@@ -2,7 +2,10 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://vastiplus.by/sitemap.xml
+
+# Preferred host (used by Yandex)
+Host: vastiplus.by
 
 # Crawl-delay for good citizenship
 Crawl-delay: 1 
